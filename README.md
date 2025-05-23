@@ -38,5 +38,6 @@ All code was created in either Julia version 1.4.2 or R version 3.6.2.
 This directory contains spatial networks, metanetwork structures, and output from simulations. It is divided into subdirectories:
 
 - `Fig1/` – contains processed CSV and RDS files for nonrandom mutualistic network simulations
-- `spatial_networks.zip` – compressed archive with spatial networks
-- Other files and folders store incidence matrices, time series data, and intermediate outputs
+- `spatial_networks` – For spatial networks
+- `interaction_networks`- For empirical mutualistic network
+- Other files and folders store incidence matrices, and intermediate outputs
