@@ -61,23 +61,6 @@ n_sim = 10
 # eg: to run n_sim=2 different spatial networks, and interactionNetwork="M_SD_025", do the following:
 pmap(run_parallel, repeat(["grid","scalefree","random"],n_sim), repeat(["M_SD_002"],n_sim*3), repeat(collect(1:10),inner=3))
 
-# Number of simulations to run in parallel
-#n_sim = 8
-
-#networks = c("M_SD_002", "M_SD_005","M_SD_007", "M_SD_008", "M_SD_010", "M_SD_012", "M_SD_014", "M_SD_016", "M_SD_025", "M_SD_027",  "M_PL_006", "M_PL_010","M_PL_025", "M_PL_033","M_PL_036", "M_PL_037", "M_PL_039", "M_PL_046", "M_PL_051", "M_PL_059","M_PL_061_33","A_HP_015","A_HP_042", "A_PH_004","A_PH_005")
-
-
-
-# List of spatial networks and interaction networks
-#spatialNetworks = ["random", "smallWorld05"]
-#interactionNetworks = ["M_SD_002", "M_SD_005", "M_SD_007", "M_SD_010"]
-
-
-# Create combinations of spatial and interaction networks
-#combinations = [(spatialNetwork, interactionNetwork) for spatialNetwork in spatialNetworks for interactionNetwork in interactionNetworks]
-
-# Run simulations in parallel using pmap
-#pmap(x -> run_parallel(x[1], x[2]), combinations)
 
 #################
 # TO RUN THIS SCRIPT
