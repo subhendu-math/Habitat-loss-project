@@ -22,8 +22,8 @@ using Distributed, Random, DelimitedFiles, DataFrames, CSV, Graphs, StatsBase
   c_r = 0.1    # colonisation - resource
   c_c = 0.1    # colonisation - consumer
 
-for j in 3#1:length(r1)
-    for i in 3#in 1:length(r1)
+for j in 1:length(r1)
+    for i in in 1:length(r1)
         # Extinction and colonization probabilities
         e_r = r1[i] * c_r    # Extinction - resource
         e_c = r1[j] * c_c    # Extinction - consumer
