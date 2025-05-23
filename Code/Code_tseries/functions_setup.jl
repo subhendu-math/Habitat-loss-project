@@ -78,25 +78,5 @@ function initialise_dataframes_store_results(tmax, D, n)
 end
 
 
-#function initialise_dataframes_store_results(tmax, D, n)
-    # Determine the number of time points to store (last 200)
- #   max_time_points = min(tmax, 200)
-
-    # Initialise dataframes for storing results
-  #  df_dt = DataFrame(
-   #     D = repeat(D, inner=max_time_points*n),
-    #    t = repeat((tmax-max_time_points+1):tmax, outer=length(D), inner=n),
-     #   species = repeat(1:n, outer=length(D)*max_time_points),
-      #  abundance = Vector{Union{Missing, Float32}}(missing, length(D)*max_time_points*n)
-    #)
-
-    # Set abundance at the initial time point for D == 0
-    #df_dt[(df_dt.D .== 0) .& (df_dt.t .== (tmax-max_time_points+1)), "abundance"] .= 1
-
-    # Return the dataframe with the last 200 time points stored
-    #return df_dt
-#end
-
-
 
 
