@@ -2,8 +2,7 @@
 library(dplyr)
 library(broom)
 library(patchwork)
-# Example dataframe (replace with your actual data)
-setwd("~/Evolution_work_20feb/Output_14june/Output_14oct/nonrandom_probability/Fig1/Data")
+
 df <-read.csv("nonrandom_total_data_fig3.csv", header = TRUE)
 df1 <-read.csv("random_total_data_fig3.csv", header = TRUE)
 df<-df%>% mutate(habitat_loss="Correlated")
@@ -52,8 +51,6 @@ Fig1<- ggplot(
     )
 
 
-
-setwd("~/Evolution_work_20feb/Output_14june/Output_14oct/nonrandom_probability/Fig1")
 
 ggsave("Fig1_final.pdf", plot = Fig1, width = 10, height = 5)
 
