@@ -1,6 +1,7 @@
 # FUNCTIONS USED TO SIMULATE HABITAT DESTRUCTION
 
-# RANDOM HABITAT DESTRUCTION
+# RANDOM(Uncorrelated) HABITAT DESTRUCTION
+#spatially uncorrelated destruction
 function habitat_destruction_random(dn, x_state, x_r, x_c)
         
     # pristine patches
@@ -18,7 +19,7 @@ function habitat_destruction_random(dn, x_state, x_r, x_c)
 end
 
 
-# NONRANDOM HABITAT DESTRUCTION
+# NONRANDOM(Corrrelated) HABITAT DESTRUCTION
 # spatially correlated destruction
 function habitat_destruction_nonrandom(dn, n_patch, x_state, x_r, x_c, k,M_adj)
         
