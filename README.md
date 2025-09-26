@@ -43,17 +43,17 @@ The following parameters are set inside the script but can be modified by the us
 ## Run the script with multiple processes
 
 Use Julia’s -p flag to specify the number of processes. For example, to run with 2 processes:
--`julia -p 2 run_mutualistic.jl`
+`julia -p 2 run_mutualistic.jl`
 
 ## Example setup inside the script
 
 At the bottom of `run_mutualistic.jl`, the following command controls which networks and replicates are run:
 
  `pmap(
-  -run_parallel,
-  -repeat(["grid","scalefree","random"], n_sim),          # spatial networks
-  -repeat(["M_SD_002"], n_sim*3),                         # interaction network
-  -repeat(collect(1:10), inner=3)                         # replicates
+  run_parallel,
+  repeat(["grid","scalefree","random"], n_sim),          # spatial networks
+  repeat(["M_SD_002"], n_sim*3),                         # interaction network
+  repeat(collect(1:10), inner=3)                         # replicates
 )`
 ## Output files
 
