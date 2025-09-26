@@ -18,6 +18,39 @@ All code was created in either Julia version 1.4.2 or R version 3.6.2.
   - `functions_master.jl` – main execution controller
   - `functions_setup.jl` – initializes simulations
 
+
+
+
+
+This script simulates mutualistic metacommunity dynamics under habitat loss.
+
+---
+
+## Simulation parameters
+
+The following parameters are set inside the script but can be modified by the user:
+
+- **Spatial networks (`spatialNetwork`)**: choose from `"grid"`, `"scalefree"`, `"random"`  
+- **Interaction networks (`interactionNetwork`)**: e.g. `"M_SD_002"`, `"M_SD_005"`, …  
+- **Replicates (`replicate`)**: integer index for independent runs  
+- **Colonization rates (`c_r`, `c_c`)**: default is `0.1`  
+- **Extinction/colonization ratio (`r1`)**: a range of values (`0:0.3:6` by default).  
+  - Extinction rates are determined as:
+    - `e_r = r1 * c_r` (resource extinction rate)  
+    - `e_c = r1 * c_c` (consumer extinction rate)  
+- **Habitat destruction type (`destruction`)**: `"random"` or `"nonrandom"`  
+- **Other parameters**:
+  - `tmax` = maximum number of timesteps (default: 1000)  
+  - `dD` = fraction of patches destroyed at each step (default: 0.05)  
+
+---
+
+## Output files
+
+Simulation outputs are saved in the folder `Output_28oct/`.  
+
+Each output file is named as:
+random_dt_mutualism_<interactionNetwork>_<spatialNetwork>_er<e_r>_ec<e_c>_cr<c_r>_cc<c_c>_replicate<rep>.csv
 ### 2. Postprocess results and generate plots
 
 #### Figure 1: Probability of species survival under habitat loss
