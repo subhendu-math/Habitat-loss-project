@@ -58,16 +58,16 @@ Each output file is named as:
 random_dt_mutualism_<interactionNetwork>_<spatialNetwork>_er<e_r>_ec<e_c>_cr<c_r>_cc<c_c>_replicate<rep>.csv
 ### 2. Postprocess results and generate plots
 
-#### Figure 1: Probability of species survival under habitat loss
+#### Figure 2: Probability of species survival under habitat loss
 
-- `Code/Fig1_plot/Fig1_plot.r` – generates main plot
+- `Code/Fig2_plot/Fig2_plot.r` – generates main plot
 - `nonrandom_timeseries_to_average_probability.r` – Calculate probability from time series data (Spatially correlated)
 - `random_timeseries_to_average_probability.r` – Calculate probability from time series data (Spatially uncorrelated)
 - `nonrandom_merge_data.r`, `random_merge_data.r` – merges result datasets
 
-#### Figure 2: Structural effects on species persistence
+#### Figure 3: Structural effects on species persistence
 
-- `Code/Fig2_plot/Fig2_plot.r` – produces plot for structural analysis
+- `Code/Fig3_plot/Fig3_plot.r` – produces plot for structural analysis
 ## Workflow to Reproduce Figures
 
 To reproduce Manuscript Figure 2:
@@ -93,7 +93,7 @@ To reproduce Manuscript Figure 3:
 
 This directory contains spatial networks, metanetwork structures, and output from simulations. It is divided into subdirectories:
 
-- `Fig1/` – contains processed CSV and RDS files for nonrandom mutualistic network simulations
+- `Fig2/` – contains processed CSV and RDS files for nonrandom mutualistic network simulations
 - `spatial_networks` – For spatial networks
 - `interaction_networks`- For empirical mutualistic network
 - Other files and folders store incidence matrices, and intermediate outputs
