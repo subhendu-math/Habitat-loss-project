@@ -68,6 +68,24 @@ random_dt_mutualism_<interactionNetwork>_<spatialNetwork>_er<e_r>_ec<e_c>_cr<c_r
 #### Figure 2: Structural effects on species persistence
 
 - `Code/Fig2_plot/Fig2_plot.r` – produces plot for structural analysis
+## Workflow to Reproduce Figures
+
+To reproduce Manuscript Figure 2:
+
+1. Run:
+   - `random_timeseries_to_average_probability.r`
+   - `random_merge_data.r`
+   - `nonrandom_timeseries_to_average_probability.r`
+   - `nonrandom_merge_data.r`
+
+2. Then run:
+   - `Code/Fig2_plot/Fig2_plot.r`
+
+To reproduce Manuscript Figure 3:
+
+1. Ensure processed data from previous step exists.
+2. Run:
+   - `Code/Fig3_plot/Fig3_plot.r`
 
 ---
 
