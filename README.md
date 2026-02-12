@@ -1,5 +1,27 @@
 # Landscape configuration and community structure jointly determine the persistence of mutualists under habitat loss
+## Authors
 
+- **Subhendu Bhandary** (Corresponding Author)  
+- Klementyna A. Gawecka  
+- Fernando Pedraza  
+- Jordi Bascompte  
+
+**Corresponding author:**  
+Subhendu Bhandary  
+Email: bhandary.subhendu@gmail.com  
+
+**Zenodo DOI:**  
+https://doi.org/10.5281/zenodo.18376917  
+
+---
+
+
+# License
+
+All code and data in this repository are released under the  
+**Creative Commons Attribution 4.0 International License (CC-BY 4.0).**
+
+If you use this repository, please cite the associated manuscript and Zenodo DOI.
 
 This project models and visualizes the effects of habitat loss on mutualistic networks using Julia for simulation and R for data visualization. It includes time series analysis, spatial networks, and extinction-colonization dynamics.
 
