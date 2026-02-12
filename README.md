@@ -25,7 +25,7 @@ If you use this repository, please cite the associated manuscript and Zenodo DOI
 
 This project models and visualizes the effects of habitat loss on mutualistic networks using Julia for simulation and R for data visualization. It includes time series analysis, spatial networks, and extinction-colonization dynamics.
 
-All scripts assume that the working directory is set to the **root of the repository**.
+All scripts assume that the working directory is set to the root of the repository.
 ## `Code`
 All code was created in either Julia version 1.4.2 or R version 3.6.2.
 - `Core Julia packages used:`  Distributed, Random, DelimitedFiles, DataFrames, CSV, Graphs, StatsBase
@@ -132,9 +132,9 @@ Each CSV file contains the following columns:
 
 | Column Name            | Description                                 |
 |------------------------|---------------------------------------------|
-| `species_id`           | Unique species identifier                    |
-| `spatialNetwork`       | Type of spatial network ("grid", "scalefree", "random") |
-| `interactionNetwork`   | Name of mutualistic network                  |
+| `Species`           | Unique species identifier                    |
+| `Network_Type`       | Type of spatial network ("grid", "scalefree", "random") |
+| `Interaction_Network`   | Name of mutualistic network                  |
 | `replicate`            | Simulation replicate number                  |
 | `time`                 | Simulation timestep                          |
 | `abundance`            | Species abundance at the given time step    |
@@ -142,7 +142,3 @@ Each CSV file contains the following columns:
 | `e_r`, `e_c`           | Extinction rates for resources and consumers |
 | `persistence_probability` | Probability of species persistence (for processed data) |
 
-> Processed files inside `Data/Fig2/` contain aggregated statistics derived from time series data.
-
-  
-All scripts assume the working directory is the root of the repository.
