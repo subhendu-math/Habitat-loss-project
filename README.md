@@ -97,3 +97,5 @@ This directory contains spatial networks, metanetwork structures, and output fro
 - `spatial_networks` – For spatial networks
 - `interaction_networks`- For empirical mutualistic network
 - Other files and folders store incidence matrices, and intermediate outputs
+  
+All scripts assume the working directory is the root of the repository.
