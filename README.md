@@ -122,7 +122,7 @@ This directory contains spatial networks, metanetwork structures, and output fro
 
 ## Simulation Output Files
 
-Each CSV file contains the following columns:
+CSV file contains the following columns:
 
 | Column Name            | Description                                 |
 |------------------------|---------------------------------------------|
