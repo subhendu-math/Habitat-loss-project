@@ -1,5 +1,5 @@
 # Landscape configuration and community structure jointly determine the persistence of mutualists under habitat loss
- **Subhendu Bhandary** , **Klementyna A. Gawecka**, **Fernando Pedraza**, **Jordi Bascompte**
+ **Subhendu Bhandary**, **Klementyna A. Gawecka**, **Fernando Pedraza**, **Jordi Bascompte**
   
 **Corresponding author:**  
 Subhendu Bhandary (Email: bhandary.subhendu@gmail.com)  
