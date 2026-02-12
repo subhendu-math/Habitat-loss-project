@@ -25,7 +25,7 @@ If you use this repository, please cite the associated manuscript and Zenodo DOI
 
 This project models and visualizes the effects of habitat loss on mutualistic networks using Julia for simulation and R for data visualization. It includes time series analysis, spatial networks, and extinction-colonization dynamics.
 
-
+All scripts assume that the working directory is set to the **root of the repository**.
 ## `Code`
 All code was created in either Julia version 1.4.2 or R version 3.6.2.
 
@@ -73,6 +73,9 @@ At the bottom of `run_mutualistic.jl`, the following command controls which netw
 
  ``` pmap( run_parallel, repeat(["grid","scalefree","random"], n_sim), repeat(["M_SD_002"], n_sim*3),  repeat(collect(1:10), inner=3)  ) ```
 ## Output files
+
+Simulation outputs are written to the directory specified in  
+`run_mutualistic.jl` under the variable: output_dir
 
 Simulation outputs are saved in the folder `Output_28oct/`.  
 
