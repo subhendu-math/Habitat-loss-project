@@ -123,5 +123,26 @@ This directory contains spatial networks, metanetwork structures, and output fro
 - `spatial_networks` – For spatial networks
 - `interaction_networks`- For empirical mutualistic network
 - Other files and folders store incidence matrices, and intermediate outputs
+
+  # Data Dictionary
+
+## Simulation Output Files
+
+Each CSV file contains the following columns:
+
+| Column Name            | Description                                 |
+|------------------------|---------------------------------------------|
+| `species_id`           | Unique species identifier                    |
+| `spatialNetwork`       | Type of spatial network ("grid", "scalefree", "random") |
+| `interactionNetwork`   | Name of mutualistic network                  |
+| `replicate`            | Simulation replicate number                  |
+| `time`                 | Simulation timestep                          |
+| `abundance`            | Species abundance at the given time step    |
+| `c_r`, `c_c`           | Colonization rates for resources and consumers |
+| `e_r`, `e_c`           | Extinction rates for resources and consumers |
+| `persistence_probability` | Probability of species persistence (for processed data) |
+
+> Processed files inside `Data/Fig2/` contain aggregated statistics derived from time series data.
+
   
 All scripts assume the working directory is the root of the repository.
