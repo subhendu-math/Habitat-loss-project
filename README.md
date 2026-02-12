@@ -28,7 +28,8 @@ This project models and visualizes the effects of habitat loss on mutualistic ne
 All scripts assume that the working directory is set to the **root of the repository**.
 ## `Code`
 All code was created in either Julia version 1.4.2 or R version 3.6.2.
-
+- `Core Julia packages used:`  Distributed, Random, DelimitedFiles, DataFrames, CSV, Graphs, StatsBase
+- `Core R packages used:` ggplot2, gridExtra, cowplot, RColorBrewer, paletteer, dplyr, broom, patchwork, 
 ### 1. Run habitat destruction simulations with spatially explicit metacommunity models
 
 - `Code/Code_tseries/run_mutualistic.jl`  
